@@ -4,8 +4,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 827825429717-k2lhiruh543tgd44tgp7o363s5ssgd16.apps.googleusercontent.com
-            client-secret: c7vBTPHxbPT8yNdwuD2CnB3m
+            client-id:
+            client-secret:
           keycloak:
             client-id: encoservice
             client-secret: c227e636-2ce7-479d-8c8d-a2b0592a124e
