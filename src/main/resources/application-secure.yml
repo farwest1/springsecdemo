@@ -6,6 +6,23 @@ spring:
           google:
             client-id: 827825429717-k2lhiruh543tgd44tgp7o363s5ssgd16.apps.googleusercontent.com
             client-secret: c7vBTPHxbPT8yNdwuD2CnB3m
+          keycloak:
+            client-id: encoservice
+            client-secret: c227e636-2ce7-479d-8c8d-a2b0592a124e
+            authorization-grant-type: authorization_code
+            redirect-uri: 'http://localhost:8081/login/oauth2/code/keycloak'
+            scope:
+              - openid
+              - profile
+              - email
+        provider:
+          keycloak:
+            authorization-uri: http://192.168.2.13:10080/auth/realms/spring/protocol/openid-connect/auth
+            token-uri: http://192.168.2.13:10080/auth/realms/spring/protocol/openid-connect/token
+            user-info-uri: http://192.168.2.13:10080/auth/realms/spring/protocol/openid-connect/userinfo
+            jwk-set-uri: http://192.168.2.13:10080/auth/realms/spring/protocol/openid-connect/certs
+            user-name-attribute: user_name
+
 
 
 logging:
