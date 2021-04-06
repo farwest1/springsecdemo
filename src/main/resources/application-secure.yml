@@ -1,0 +1,17 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 827825429717-k2lhiruh543tgd44tgp7o363s5ssgd16.apps.googleusercontent.com
+            client-secret: c7vBTPHxbPT8yNdwuD2CnB3m
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security:
+          web:
+            FilterChainProxy: DEBUG
